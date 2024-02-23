@@ -20,7 +20,7 @@ pipeline {
 
                 // Clone the Git repository
                 git branch: 'main',
-                    url: 'https://github.com/mickleissa/Flask_App_python_mysql_db.git '
+                    url: 'https://github.com/mickleissa/Flask_App_python_mysql_db.git'
                 sh "ls -lart"
             }
         }
