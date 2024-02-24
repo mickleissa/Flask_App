@@ -4,7 +4,7 @@ variable "aws_lb_zone_id" {}
 
 data "aws_route53_zone" "dev_proj_1_jhooq_org" {
   name         = "mickleissa.com"
-  name         = var.domain_name
+ # name         = var.domain_name
   private_zone = false
 }
 
