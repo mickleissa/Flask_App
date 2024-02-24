@@ -2,10 +2,10 @@ pipeline {
     agent any
  
    // Jenkins AWS Access & Secret key
-    environment {
-        AWS_ACCESS_KEY_ID     = credentials('aws_access_key_id')
-        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
-    }
+    // environment {
+    //     AWS_ACCESS_KEY_ID     = credentials('aws_access_key_id')
+    //     AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
+    // }
 
     parameters {
             booleanParam(name: 'PLAN_TERRAFORM', defaultValue: false, description: 'Check to plan Terraform changes')
