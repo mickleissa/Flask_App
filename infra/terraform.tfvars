@@ -13,4 +13,4 @@ ec2_ami_id     = "ami-07b36ea9852e986ad"
 
 ec2_user_data_install_apache = ""
 
-domain_name = "dev.mickleissa.com"
+domain_name = "mickleissa.com"
