@@ -75,8 +75,9 @@ pipeline {
                             dir('infra') {
                                 sh 'echo "=================Terraform Destroy=================="'
                                 sh 'terraform destroy -auto-approve'
+                                // # Clean up 
                                 steps{
-                                    dir('/var/lib/jenkins/workspace/flask_app_infra')
+                                    dir('/var/lib/jenkins/workspace/flask_app_infra*')
                                     deleteDir()
                                 }
                             }
