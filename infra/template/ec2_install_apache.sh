@@ -1,13 +1,13 @@
 #! /bin/bash
 # shellcheck disable=SC2164
 cd /home/ubuntu
-yes | sudo apt update
-yes | sudo apt install python3 python3-pip
 git clone https://github.com/mickleissa/Flask_App_python_mysql_db.git
-sleep 20
-# shellcheck disable=SC2164
-cd Flask_App_python_mysql_db
-sudo pip3 install -r requirements.txt
+yes | sudo apt update
+sudo apt-get install nodejs -y
 echo 'Waiting for 30 seconds before running the app.py'
-sudo setsid python3 -u app.py &
-sleep 30
+sudo apt install npm -y
+npm install express  # required to run
+npm install mysql # required to run mysql
+echo 'Waiting for 30 seconds before running the app.py'
+cd /home/ubuntu/Flask_App_python_mysql_db/templates
+node app.js
